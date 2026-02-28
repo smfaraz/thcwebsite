@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronRight } from 'lucide-react';
+import { Menu, X, ChevronRight, Linkedin } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +21,7 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav 
+    <nav
       className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-thc-navy shadow-lg py-2' : 'bg-transparent py-4'}`}
       aria-label="Main Navigation"
     >
@@ -45,7 +45,7 @@ export const Navbar: React.FC = () => {
               </div>
             </a>
           </div>
-          
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navLinks.map((link) => (
@@ -57,15 +57,15 @@ export const Navbar: React.FC = () => {
                   {link.name}
                 </a>
               ))}
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 className="bg-thc-orange hover:bg-orange-600 text-white px-5 py-2 rounded-full font-bold text-sm transition-colors flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-thc-navy"
               >
                 Hire Talent <ChevronRight className="w-4 h-4" aria-hidden="true" />
               </a>
             </div>
           </div>
-          
+
           <div className="-mr-2 flex md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -93,7 +93,7 @@ export const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            <a 
+            <a
               href="#contact"
               className="text-white bg-thc-orange block px-3 py-2 rounded-md text-base font-bold mt-4 focus:ring-2 focus:ring-white"
               onClick={() => setIsOpen(false)}
