@@ -1,4 +1,5 @@
 import React from 'react';
+import { FadeIn } from './FadeIn';
 
 export const TrustBar: React.FC = () => {
   // Clients listed in the company profile
@@ -20,7 +21,7 @@ export const TrustBar: React.FC = () => {
         </p>
         <div className="flex flex-wrap justify-center gap-x-6 md:gap-x-10 gap-y-4 md:gap-y-6 items-center opacity-70 hover:opacity-100 transition-opacity duration-300">
           {partners.map((partner, index) => (
-            <div key={index} className="flex justify-center items-center">
+            <FadeIn key={index} delay={index * 100} className="flex justify-center items-center">
               <a
                 href="#"
                 className="text-sm md:text-lg font-heading font-black text-thc-navy text-center px-4 py-2 rounded-lg transition-all duration-200 hover:text-thc-orange hover:shadow-md hover:bg-gray-50 focus:outline-none focus:text-thc-orange focus:shadow-md"
@@ -29,7 +30,7 @@ export const TrustBar: React.FC = () => {
               >
                 {partner}
               </a>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>
