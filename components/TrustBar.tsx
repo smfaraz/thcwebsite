@@ -3,12 +3,12 @@ import React from 'react';
 export const TrustBar: React.FC = () => {
   // Clients listed in the company profile
   const partners = [
-    "SAUDI RAILWAYS (SAR)", 
-    "JACOBS", 
-    "TCS", 
-    "MARAFIQ", 
-    "ETIHAD ATHEEB (GO)", 
-    "ASTRA", 
+    "SAUDI RAILWAYS (SAR)",
+    "JACOBS",
+    "TCS",
+    "MARAFIQ",
+    "AZMEEL",
+    "ASTRA",
     "ETIHAD ATHEEB"
   ];
 
@@ -21,7 +21,7 @@ export const TrustBar: React.FC = () => {
         <div className="flex flex-wrap justify-center gap-x-6 md:gap-x-10 gap-y-4 md:gap-y-6 items-center opacity-70 hover:opacity-100 transition-opacity duration-300">
           {partners.map((partner, index) => (
             <div key={index} className="flex justify-center items-center">
-              <a 
+              <a
                 href="#"
                 className="text-sm md:text-lg font-heading font-black text-thc-navy text-center px-4 py-2 rounded-lg transition-all duration-200 hover:text-thc-orange hover:shadow-md hover:bg-gray-50 focus:outline-none focus:text-thc-orange focus:shadow-md"
                 aria-label={`Visit ${partner}`}
