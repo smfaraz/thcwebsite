@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
               Talent Hunters Consulting. Your trusted Oil and Gas recruitment partner. Challenge us to find your next international recruit.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/company/talent-hunters-consulting" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-[#0077b5] transition-colors focus:outline-none focus:text-white"><Linkedin className="w-5 h-5" /></a>
+              <a href="https://www.linkedin.com/company/talenthuntersconsulting/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-[#0077b5] transition-colors focus:outline-none focus:text-white"><Linkedin className="w-5 h-5" /></a>
             </div>
           </div>
 
