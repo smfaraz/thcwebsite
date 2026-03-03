@@ -36,7 +36,6 @@ export const Footer: React.FC = () => {
               <li><a href="#services" className="hover:text-thc-orange focus:text-thc-orange focus:outline-none">Executive Search</a></li>
               <li><a href="#services" className="hover:text-thc-orange focus:text-thc-orange focus:outline-none">Technical Manpower</a></li>
               <li><a href="#contact" className="hover:text-thc-orange focus:text-thc-orange focus:outline-none">Contact Us</a></li>
-              <li><a href="#ai-tools" className="hover:text-thc-orange focus:text-thc-orange focus:outline-none">JD Generator</a></li>
             </ul>
           </div>
 

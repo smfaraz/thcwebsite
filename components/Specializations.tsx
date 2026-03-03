@@ -53,24 +53,26 @@ export const Specializations: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {expertise.map((item, index) => (
-            <div key={index} className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-thc-orange">
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <div className="absolute top-40 right-6 w-12 h-12 bg-thc-navy text-white rounded-full flex items-center justify-center shadow-lg group-hover:bg-thc-orange transition-colors">
-                  {getIcon(index)}
+            <FadeIn key={index} delay={index * 150} className="h-full">
+              <div className="h-full group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-thc-orange">
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                  />
                 </div>
-                <h4 className="text-xl font-bold text-thc-navy mb-2 mt-2">{item.title}</h4>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  {item.description}
-                </p>
+                <div className="p-6">
+                  <div className="absolute top-40 right-6 w-12 h-12 bg-thc-navy text-white rounded-full flex items-center justify-center shadow-lg group-hover:bg-thc-orange transition-colors">
+                    {getIcon(index)}
+                  </div>
+                  <h4 className="text-xl font-bold text-thc-navy mb-2 mt-2">{item.title}</h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    {item.description}
+                  </p>
+                </div>
               </div>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </FadeIn>

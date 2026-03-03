@@ -17,7 +17,6 @@ export const Navbar: React.FC = () => {
     { name: 'Specializations', href: '#specializations' },
     { name: 'Regional Expertise', href: '#regions' },
     { name: 'Services', href: '#services' },
-    { name: 'AI Tools', href: '#ai-tools' },
   ];
 
   return (
